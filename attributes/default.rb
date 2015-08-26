@@ -28,6 +28,6 @@ default["collectd"]["plugins"]["statsd"]["config"] =
 	{
   "Host" =>  "::",
   "Port" =>  "8125",
-  "DeleteSets" =>  true
+  "DeleteSets" =>  true,
   "TimerPercentile" =>  90.0		
 	}
