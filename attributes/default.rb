@@ -23,3 +23,11 @@ default["collectd"]["plugins"]["df"]["config"] = {"ReportReserved" => false,
 	"FSType" => [ "proc", "sysfs", "fusectl", "debugfs", "devtmpfs", "devpts", "tmpfs" ],
 	"IgnoreSelected" => true
 	}
+
+default["collectd"]["plugins"]["statsd"]["config"] = 
+	{
+  "Host" =>  "::",
+  "Port" =>  "8125",
+  "DeleteSets" =>  true
+  "TimerPercentile" =>  90.0		
+	}
